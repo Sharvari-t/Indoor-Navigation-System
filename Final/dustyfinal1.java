@@ -1,4 +1,6 @@
-package gui;
+//Program that generates destination co-ordinates when the user clicks on 
+// the floorplan image to point the destination where the bot has to arrive.
+
 import java.awt.*;
 import java.net.*;
 import java.awt.Dimension;

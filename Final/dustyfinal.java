@@ -1,3 +1,5 @@
+//Application program which takes floorplan image as the input and 
+// generates the grid and sends it to Rpi
 package gui;
 import java.awt.*;
 import java.awt.event.MouseAdapter;

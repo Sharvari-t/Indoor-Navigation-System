@@ -1,13 +1,15 @@
+// Program on Rpi to receive the destination co-ordinates input by the user
+// Uses sockets to receive the data
 import java.net.*;
 import java.io.*;
-public class Client1
+public class Clientside1
 {
     private Socket s = null;
     private DataInputStream  in  = null;
     private DataOutputStream out = null;
  int x,y;
  String num1;
-    public Client1(String address, int port)
+    public Clientside1(String address, int port)
     {
         try
         {
@@ -36,7 +38,7 @@ public class Client1
     }
  public static void main(String args[])
     {
-        Client1 c = new Client1("192.168.43.230", 5000);
+        Clientside1 c = new Clientside1("192.168.43.230", 5000);
     }
 }
 

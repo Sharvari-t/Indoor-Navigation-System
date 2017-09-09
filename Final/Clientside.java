@@ -1,13 +1,17 @@
+
+// Program on Rpi to receive the grid generated from floorplan 
+// Uses sockets to receive data 
+
 import java.net.*;
 import java.io.*;
-public class Client
+public class Clientside
 {
     private Socket s = null;
     private DataInputStream  in  = null;
     private DataOutputStream out = null;
  int[][] a=new int[15][15];
  String num1;
-    public Client(String address, int port)
+    public Clientside(String address, int port)
     {
         try
         {
@@ -39,6 +43,8 @@ public class Client
     }
  public static void main(String args[])
     {
-        Client c = new Client("192.168.43.230", 5000);
+        Clientside c = new Clientside("192.168.43.230", 5000);
     }
 }
+
+
